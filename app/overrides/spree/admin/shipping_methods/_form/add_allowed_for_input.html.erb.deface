@@ -1,0 +1,11 @@
+<!-- insert_after '.row:first-child' -->
+
+<div class="row">
+  <div data-hook="admin_shipping_method_form_display_field" class="col-md-6">
+    <%= f.field_container :allowed_for, :class => ['form-group'] do %>
+      <%= f.label :allowed_for, Spree.t(:allowed_for) %>
+      <%= select(:shipping_method, :allowed_for, Spree::ShippingMethod::ALLOWED_FOR.collect { |display| [Spree.t(display), display.to_s] }, {}, { :class => 'select2' }) %>
+      <%= error_message_on :shipping_method, :allowed_for %>
+    <% end %>
+  </div>
+</div>

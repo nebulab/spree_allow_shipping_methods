@@ -1,7 +1,8 @@
 SpreeAllowShippingMethods
 =========================
 
-Introduction goes here.
+Use this extension if you need to allow shipping methods only to a user, a guest
+or both.
 
 Installation
 ------------
